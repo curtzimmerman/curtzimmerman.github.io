@@ -2,6 +2,13 @@ html,
 body {
 	margin: 0;
 	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+nav {
+	background: #242424;
+	padding: 5px;
+	border-bottom: 1px solid white;
 }
 
 img.bg {
@@ -23,4 +30,9 @@ img.bg {
 .heading {
 	width: 100%;
 	text-align: center;
+	color: white;
+	padding-top: 50px;
+	font-weight: 300;;
+	letter-spacing: .1em;
+	font-size: 4em;
 }
