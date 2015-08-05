@@ -1,0 +1,26 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+img.bg {
+	min-height: 100%;
+	min-width: 1024px;
+	/* set up proportional scaling */
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.container {
+	width: 100%;
+}
+
+.heading {
+	width: 100%;
+	text-align: center;
+}
