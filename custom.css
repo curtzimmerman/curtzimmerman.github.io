@@ -5,6 +5,12 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+.container {
+	width: 100%;
+}
+
+/*====== header ======*/
+
 header {
 	background: #242424;
 	border-bottom: 1px solid white;
@@ -36,27 +42,18 @@ nav a:hover {
 	color: #999;
 }
 
-#logo {
-	float: left;
-	text-align: left;
-	font-weight: 400;
-	letter-spacing: .25em;
-}
+/*====== landing ======*/
 
-img.bg {
-	min-height: 100%;
-	min-width: 1024px;
-	/* set up proportional scaling */
-	width: 100%;
-	height: auto;
+div.landing {
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: -1;
-}
-
-.container {
+	height: 799px;
 	width: 100%;
+	background-image: url('img/paris-city-lights.jpg');
+	background-size: cover;
+	z-index: -1;
+	border-bottom: 1px solid white;
 }
 
 .heading {
@@ -67,4 +64,26 @@ img.bg {
 	font-weight: 300;
 	letter-spacing: .1em;
 	font-size: 4em;
+}
+
+/*====== information ======*/
+
+div.information {
+	position: absolute;
+	top: 800px;
+	left: 0;
+	background-image: url('img/grey_wash_wall/grey_wash_wall.png');
+	height: 700px;
+	width: 100%;
+}
+
+div.information p {
+	width: 60%;
+	height: 500px;
+	margin: 50px auto;
+	padding: 10px;
+	font-weight: 300;
+	letter-spacing: .1em;
+	background-color: white;
+	border: 1px solid black;
 }
