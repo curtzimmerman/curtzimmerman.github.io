@@ -5,10 +5,42 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
-nav {
+header {
 	background: #242424;
-	padding: 5px;
 	border-bottom: 1px solid white;
+	width: 100%;
+	margin: 0;
+	padding: 9px 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 0.75;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	padding: 0 10px;
+}
+
+.nav-right {
+	float: right;
+}
+
+.nav-left {
+	float: left;
+}
+
+
+nav a:hover {
+	color: #999;
+}
+
+#logo {
+	float: left;
+	text-align: left;
+	font-weight: 400;
+	letter-spacing: .25em;
 }
 
 img.bg {
@@ -31,8 +63,8 @@ img.bg {
 	width: 100%;
 	text-align: center;
 	color: white;
-	padding-top: 50px;
-	font-weight: 300;;
+	padding-top: 10%;
+	font-weight: 300;
 	letter-spacing: .1em;
 	font-size: 4em;
 }
