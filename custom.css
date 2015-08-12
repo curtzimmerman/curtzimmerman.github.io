@@ -28,7 +28,8 @@ header {
 	z-index: 50;
 }
 
-nav a {
+nav a,
+#name {
 	display: inline-block;
 	text-decoration: none;
 	color: white;
@@ -37,7 +38,7 @@ nav a {
 }
 
 nav a.selected {
-	border-bottom: 4px solid #03A9F4;
+	border-bottom: 5px solid #03A9F4;
 }
 
 .nav-right {
@@ -50,6 +51,10 @@ nav a.selected {
 
 nav a:hover {
 	color: #455A64;
+}
+
+#name {
+	display: none;
 }
 
 /*====== landing ======*/
