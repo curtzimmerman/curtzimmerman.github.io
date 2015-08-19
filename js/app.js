@@ -3,7 +3,9 @@ $( document ).ready	(function () {
 	var $heading = $('.heading');
 	var $header = $('header');
 	var $hiddenLogo = $('a.hidden');
-	var $navBar = $('')
+	var $navBar = $('');
+	var $body = $('html, body');
+	var $navLinks = $('span.links a');
 
 
 	var fadeLogo = function() {
@@ -15,8 +17,18 @@ $( document ).ready	(function () {
 		}
 	}
 
-	fadeLogo();
+	var jumpToLocation = function(location) {
+		$body.animate({scrollTop: location.offset().top});
+	}
 
+	fadeLogo();
 	$( window ).scroll(fadeLogo);
 
+	//$navLinks.click(jumpToLocation($(this)));
+	$navLinks.click(function() {
+		console.log($(this));
+		$('a.selected').removeClass('selected');
+		$(this).addClass('selected');
+	});
+	console.log($navLinks);
 });
