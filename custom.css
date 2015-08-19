@@ -16,6 +16,11 @@ div {
   transform-style: preserve-3d;
 }
 
+
+.hidden {
+	visibility: hidden;
+}
+
 /*====== header ======*/
 
 div.header-container {
@@ -36,6 +41,7 @@ div.header-container span {
 	text-decoration: none;
 	color: white;
 	padding: 0 10px;
+	padding-bottom: 5px;
 	line-height: 40px;
 }
 
@@ -125,9 +131,6 @@ div.contact {
 
 /*====== JS classes ======*/
 
-.hidden {
-	visibility: hidden;
-}
 
 /*====== Animations ======*/
 	/*borrowed from ghost.js fade-in-down */
