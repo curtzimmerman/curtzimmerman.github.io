@@ -18,17 +18,17 @@ $( document ).ready	(function () {
 	}
 
 	var jumpToLocation = function(location) {
-		$body.animate({scrollTop: location.offset().top});
+		$location = $('div.' + location);
+		$body.animate({scrollTop: $location.offset().top}, 800);
 	}
 
 	fadeLogo();
 	$( window ).scroll(fadeLogo);
 
-	//$navLinks.click(jumpToLocation($(this)));
 	$navLinks.click(function() {
-		console.log($(this));
 		$('a.selected').removeClass('selected');
 		$(this).addClass('selected');
+		console.log($(this).text().toLowerCase());
+		jumpToLocation($(this).text().toLowerCase());
 	});
-	console.log($navLinks);
 });

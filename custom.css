@@ -94,9 +94,9 @@ div.landing {
 	animation: fade-in-down 0.9s;
 }
 
-/*====== information ======*/
+/*====== projects ======*/
 
-div.information {
+div.projects {
 	position: absolute;
 	top: 300px;
 	left: 0;
@@ -105,7 +105,7 @@ div.information {
 	border-bottom: 8px solid #B6B6B6;
 }
 
-div.information p {
+div.projects p {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
