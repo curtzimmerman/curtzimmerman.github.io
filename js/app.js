@@ -4,7 +4,7 @@ $( document ).ready	(function () {
 	var $header = $('header');
 	var $hiddenLogo = $('a.hidden');
 	var $navBar = $('');
-	var $body = $('html, body');
+	var $body = $('html');
 	var $navLinks = $('span.links a');
 
 	//Fade in logo in header when greeting is scrolled past
@@ -36,5 +36,6 @@ $( document ).ready	(function () {
 		$(this).addClass('selected');
 		console.log($(this).text().toLowerCase());
 		jumpToLocation($(this).text().toLowerCase());
+		return false;
 	});
 });
