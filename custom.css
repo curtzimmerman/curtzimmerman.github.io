@@ -52,6 +52,7 @@ div.header span {
 	padding: 0 10px;
 	padding-bottom: 5px;
 	line-height: 40px;
+	outline: 0;
 }
 
 div.header a.selected {
