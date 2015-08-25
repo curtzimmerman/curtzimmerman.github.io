@@ -106,7 +106,6 @@ div.landing {
 	animation: fade-in-down 0.9s;
 }
 
-
 /*====== projects ======*/
 
 .projects {
@@ -114,6 +113,7 @@ div.landing {
 	top: 0;
 	height: 692px;
 	width: 100%;
+	margin: 45px 0;
 	box-sizing: border-box;
 }
 
@@ -123,9 +123,20 @@ div.landing {
 	width: 30%;
 	margin-left: 5%;
 	height: 100%;
-	background: #E9E9E9;
+	border: 1px solid white;
 	box-sizing: border-box;
-	
+}
+
+.project {
+	position: relative;
+	float: left;
+	width: 180px;
+	height: 180px;
+	background: gray;
+	border: 1px;
+	border-color: white;
+	border-style: solid;
+	box-sizing: border-box;
 }
 
 div.information {
@@ -135,6 +146,7 @@ div.information {
 	height: 100%;	
 	width: 60%;
 	background: #E9E9E9;
+	border: 3px solid black;
 	box-sizing: border-box;
 }
 
