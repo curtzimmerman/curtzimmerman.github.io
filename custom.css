@@ -9,9 +9,7 @@ body {
 .container {
 	position: absolute;
 	top: 0;
-	right: 0;
 	left: 0;
-	bottom: 0;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -113,31 +111,29 @@ div.landing {
 	position: relative;
 	top: 0;
 	height: 692px;
-	width: 100%;
-	margin: 45px 0;
-	box-sizing: border-box;
+	width: 90%;
+	margin: 45px auto;
 }
 
 .projects-selector {
-	position: relative;
-	float: left;
-	width: 30%;
-	margin-left: 5%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 400px;
+	padding-right: 10px;
 	height: 100%;
 	border: 1px solid white;
-	box-sizing: border-box;
 }
 
 .project {
 	position: relative;
-	float: left;
+	display: inline-block;
 	width: 180px;
 	height: 180px;
 	background: gray;
 	border: 1px;
 	border-color: white;
 	border-style: solid;
-	box-sizing: border-box;
 }
 
 .project:hover {
@@ -145,11 +141,11 @@ div.landing {
 }
 
 div.information {
-	float: left;
+	float: right;
+	margin-left: 400px;
 	padding: 25px;
-	margin-right: 5%;
 	height: 100%;	
-	width: 60%;
+	width: auto;
 	background: #E9E9E9;
 	border: 3px solid black;
 	box-sizing: border-box;
