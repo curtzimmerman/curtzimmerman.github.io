@@ -140,6 +140,10 @@ div.landing {
 	box-sizing: border-box;
 }
 
+.project:hover {
+	opacity: .75;
+}
+
 div.information {
 	float: left;
 	padding: 25px;
