@@ -4,7 +4,7 @@ var animationsModule = (function() {
 	jQuery.fx.interval = 6; //default 13ms
 
 	// Cache DOM
-	var $html = $('html');
+	var $html = $('html, body');
 	var $header = $('.header');
 	var $heading = $('.heading');
 	var $logo = $header.find("#logo");
@@ -26,7 +26,7 @@ var animationsModule = (function() {
 
 	// Jump to top of div with matching class name if link is clicked
 	function jumpToSection(location) {
-		console.log('location');
+		console.log(location);
 		$location = $(location.target);
 		$location.siblings('.selected').removeClass('selected');
 		$location.addClass('selected');
