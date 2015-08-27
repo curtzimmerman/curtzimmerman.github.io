@@ -79,7 +79,6 @@ div.landing {
 	background: #3A414C;
 	background-size: cover;
 	text-align: center;
-	border-bottom: 1px solid black;
 }
 
 .welcome {
@@ -103,6 +102,16 @@ div.landing {
 	color: #CFD8DC;
 	font-weight: normal;
 	animation: fade-in-down 0.9s;
+}
+
+/*====== about me =======*/
+
+.about-me {
+	position: relative;
+	top: 0;
+	height: 500px;
+	width: 100%;
+	background: #2E3134;
 }
 
 /*====== projects ======*/
@@ -161,10 +170,10 @@ div.project-description {
 /*====== contact ======*/
 div.contact {
 	position: relative;
-	height: 400px;
+	height: 200px;
 	width: 100%;
 	text-align: center;
-	background: #CFD8DC;
+	background: #3A414C;
 }
 
 /*====== Animations ======*/

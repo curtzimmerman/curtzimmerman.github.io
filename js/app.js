@@ -26,11 +26,13 @@ var animationsModule = (function() {
 
 	// Jump to top of div with matching class name if link is clicked
 	function jumpToSection(location) {
+		console.log('location');
 		$location = $(location.target);
 		$location.siblings('.selected').removeClass('selected');
 		$location.addClass('selected');
 		$scrollPosition = $('div.' + $location.text().toLowerCase());
 		$html.animate({scrollTop: $scrollPosition.offset().top}, 600);
+		console.log($scrollPosition);
 		return false;
 	}
 
