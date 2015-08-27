@@ -31,7 +31,8 @@ var animationsModule = (function() {
 		$location.siblings('.selected').removeClass('selected');
 		$location.addClass('selected');
 		$scrollPosition = $('div.' + $location.text().toLowerCase());
-		$html.animate({scrollTop: $scrollPosition.offset().top}, 600);
+		topMargin = parseInt($scrollPosition.css("margin-top"));
+		$html.animate({scrollTop: $scrollPosition.offset().top - topMargin - $header.outerHeight()}, 600);
 		console.log($scrollPosition);
 		return false;
 	}
