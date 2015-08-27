@@ -68,6 +68,15 @@ a#logo:hover {
 span.links {
 	position: absolute;
 	right: 0;
+	padding: 0 !important;
+	margin: 0;
+}
+
+a#blog-link {
+	display: inline-block;
+	background: #736855;
+	height: 100%;
+	padding-bottom: 0;
 }
 
 /*====== landing ======*/
@@ -106,17 +115,29 @@ div.landing {
 
 /*====== about me =======*/
 
-.about-me {
+div.about-me {
 	position: relative;
 	top: 0;
 	height: 500px;
 	width: 100%;
 	background: #2E3134;
+	text-align: center;
+}
+
+.about-me-text {
+	position: relative;
+	top: 75px;
+	padding: 30px;
+	color: white;
+}
+
+.about-me span {
+	font-size: 1.2rem;
 }
 
 /*====== projects ======*/
 
-.projects {
+div.projects {
 	position: relative;
 	top: 0;
 	height: 692px;
