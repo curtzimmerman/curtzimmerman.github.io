@@ -4,12 +4,15 @@ body {
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
 	background: #FFF;
+	height: 100%;
+	min-height: 100;
 }
 
 .container {
 	position: absolute;
 	top: 0;
 	left: 0;
+	right: 0;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -21,6 +24,8 @@ div {
 	-webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
+
+	box-sizing: border-box;
 }
 
 
@@ -34,7 +39,6 @@ div.header {
 	background: #3A414C;
 	width: 100%;
 	height: 40px;
-	margin: 0;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -45,11 +49,11 @@ div.header {
 div.header a,
 div.header span {
 	display: inline;
+	line-height: 40px;
 	text-decoration: none;
 	color: white;
 	padding: 0 10px;
 	padding-bottom: 5px;
-	line-height: 40px;
 	outline: 0;
 }
 
@@ -138,10 +142,9 @@ div.about-me {
 /*====== projects ======*/
 
 div.projects {
-	position: relative;
-	top: 0;
 	height: 692px;
 	width: 90%;
+	max-width: 1200px;
 	margin: 45px auto;
 }
 
@@ -149,8 +152,7 @@ div.projects {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 400px;
-	padding-right: 10px;
+	width: 35%;
 	height: 100%;
 	border: 1px solid white;
 }
@@ -171,20 +173,37 @@ div.projects {
 }
 
 div.information {
-	float: right;
-	margin-left: 400px;
-	padding: 25px;
+	position: absolute;
+	top: 0;
+	right: 0;
 	height: 100%;	
-	width: auto;
+	width: 65%;
 	background: #E9E9E9;
 	border: 3px solid black;
-	box-sizing: border-box;
 }
 
+div.information div {
+	min-height: 100%;
+}
+
+
 div.project-description {
+	float: left;
+	width: 65%;
+	padding: 15px;
 	font-weight: 300;
-	height: 100%;
 	letter-spacing: .1em;
+	border: 1px solid black;
+}
+
+div.project-tech-used {
+	float: right;
+	width: 35%;
+	border: 1px solid black;
+}
+
+.project-tech-used p {
+	height: 100%;
 }
 
 
