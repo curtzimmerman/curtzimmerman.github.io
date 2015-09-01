@@ -28,6 +28,11 @@ div {
 	box-sizing: border-box;
 }
 
+ul, li {
+	display: inline;
+	list-style-type: none;
+}
+
 
 .hidden {
 	visibility: hidden;
@@ -69,7 +74,7 @@ a#logo:hover {
 	color: white;
 }
 
-span.links {
+.links {
 	position: absolute;
 	right: 0;
 	padding: 0 !important;

@@ -46,7 +46,7 @@ var animationsModule = (function() {
 		var projectsTop = $projects.offset().top;
 		var contactTop = $contact.offset().top;
 
-		removeAllSelected($('.links'));
+		removeAllSelected($('.links').children());
 		
 		// highlight link based on middle of window
 		if (windowCenter < projectsTop) {
