@@ -234,9 +234,6 @@ div.contact {
 /*====== RWD ======*/
 
 @media only screen and (max-width: 1182px) {
-	.heading {
-		background: green;
-	}
 
 	.project {
 	}
@@ -251,9 +248,6 @@ div.contact {
 }
 
 @media only screen and (max-width: 841px) {
-	.heading {
-		background: purple;
-	}
 
 	div.project-description {
 		float: left;
@@ -280,9 +274,6 @@ div.contact {
 }
 
 @media only screen and (max-width: 600px) {
-	.heading {
-		background: orange;
-	}
 
 	.welcome {
 		top: 45px;
