@@ -16,7 +16,7 @@ var animationsModule = (function() {
 	//Bind Events
 	$(window).on('scroll', fadeInLogo);
 	$(window).on('scroll', highlightLinkOnScroll);
-	$('.links').find('a').on('click', jumpToSection.bind(this));
+	$links.find('a').on('click', jumpToSection.bind(this));
 
 	// if the top of the window (minus header height) is lower than the bottom edge of the greeting, show the logo, else hide it 
 	function fadeInLogo() {		
