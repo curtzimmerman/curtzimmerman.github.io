@@ -102,7 +102,7 @@ div.landing {
 
 .welcome {
 	position: relative;
-	top: 75px;
+	top: 12%;
 	height: 150px;
 }
 
@@ -137,23 +137,15 @@ div.about-me-container {
 .about-me-text {
 	position: absolute;
 	top: 75px;
-	right: 75px;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
 	padding: 30px;
 	color: white;
 }
 
 .about-me span {
 	font-size: 1.2rem;
-}
-
-.about-me-picture {
-	position: absolute;
-	left: 75px;
-	top: 100px;
-	height: 300px;
-	width: 300px;
-	border-radius: 100%;
-	background: gray;
 }
 
 
