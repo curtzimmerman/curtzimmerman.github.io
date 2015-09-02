@@ -12,11 +12,21 @@ var animationsModule = (function() {
 	var $home = $('div.home');
 	var $projects = $('div.projects');
 	var $contact = $('div.contact');
+	var $menu = $('#menu');
 
 	//Bind Events
 	$(window).on('scroll', fadeInLogo);
 	$(window).on('scroll', highlightLinkOnScroll);
-	$links.find('a').on('click', jumpToSection.bind(this));
+	$links.find('a').on('click', jumpToSection);
+	$menu.on('click', function(e) {
+		e.preventDefault();
+		menuReveal();
+	});
+	$(window).on('resize scroll', function() {
+		if ($(window).width() < 500) {
+			menuHide();
+		}
+	});
 
 	// if the top of the window (minus header height) is lower than the bottom edge of the greeting, show the logo, else hide it 
 	function fadeInLogo() {		
@@ -55,6 +65,20 @@ var animationsModule = (function() {
 		} else {
 			$links.find(".contact").addClass("selected");
 		}
+		return false;
+	}
+
+	function menuReveal() {
+		if ($links.css('display') === 'none') {
+			$links.slideDown();
+		} else {
+			$links.slideUp();
+		}
+		return false;
+	}
+
+	function menuHide() {
+		$links.slideUp();
 		return false;
 	}
 

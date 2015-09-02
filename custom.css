@@ -70,6 +70,12 @@ a#logo:hover {
 	color: white;
 }
 
+a#menu {
+	display: none;
+	position: absolute;
+	right: 0;
+}
+
 .links {
 	position: absolute;
 	right: 0;
@@ -103,6 +109,7 @@ div.landing {
 .welcome {
 	position: relative;
 	top: 12%;
+	padding: 10px;
 	height: 150px;
 }
 
@@ -274,5 +281,22 @@ div.contact {
 
 	div.information {
 		top: 160px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.welcome { 
+		font-size: 80%;
+	}
+
+	a#menu {
+		display: block;
+	}
+
+	.links {
+		top: 40px;
+		width: 100%;
+		display: none;
+		background: #3A414C;
 	}
 }
