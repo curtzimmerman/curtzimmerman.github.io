@@ -34,10 +34,6 @@ ul, li {
 }
 
 
-.hidden {
-	visibility: hidden;
-}
-
 /*====== header ======*/
 
 div.header {
@@ -86,6 +82,10 @@ a#blog-link {
 	background: #736855;
 	height: 100%;
 	padding-bottom: 0;
+}
+
+a#logo {
+	display: none;
 }
 
 /*====== landing ======*/

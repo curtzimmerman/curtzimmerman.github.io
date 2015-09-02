@@ -21,7 +21,6 @@ var animationsModule = (function() {
 	// if the top of the window (minus header height) is lower than the bottom edge of the greeting, show the logo, else hide it 
 	function fadeInLogo() {		
 		if ( ($(window).scrollTop() - $header.outerHeight()) > ($heading.offset().top + $heading.find("h1").outerHeight())) {
-			$logo.css('visibility', 'visible');
 			$logo.fadeIn('slow');
 		} else {
 			$logo.fadeOut('slow');
