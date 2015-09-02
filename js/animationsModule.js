@@ -23,9 +23,7 @@ var animationsModule = (function() {
 		menuReveal();
 	});
 	$(window).on('resize scroll', function() {
-		if ($(window).width() < 500) {
 			menuHide();
-		}
 	});
 
 	// if the top of the window (minus header height) is lower than the bottom edge of the greeting, show the logo, else hide it 
@@ -78,7 +76,11 @@ var animationsModule = (function() {
 	}
 
 	function menuHide() {
-		$links.slideUp();
+		if ($(window).width() < 500) {
+			$links.css("display", "none");
+		} else {
+			$links.css("display", "block");
+		}
 		return false;
 	}
 
