@@ -125,7 +125,7 @@ div.landing {
 
 /*====== about me =======*/
 
-div.about-me {
+div.about-me-container {
 	position: relative;
 	top: 0;
 	height: 500px;
@@ -135,8 +135,9 @@ div.about-me {
 }
 
 .about-me-text {
-	position: relative;
+	position: absolute;
 	top: 75px;
+	right: 75px;
 	padding: 30px;
 	color: white;
 }
@@ -144,6 +145,17 @@ div.about-me {
 .about-me span {
 	font-size: 1.2rem;
 }
+
+.about-me-picture {
+	position: absolute;
+	left: 75px;
+	top: 100px;
+	height: 300px;
+	width: 300px;
+	border-radius: 100%;
+	background: gray;
+}
+
 
 /*====== projects ======*/
 
