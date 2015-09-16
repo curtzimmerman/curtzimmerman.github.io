@@ -28,7 +28,8 @@ div {
 	box-sizing: border-box;
 }
 
-ul, li {
+div.header ul,
+div.header li {
 	display: inline;
 	list-style-type: none;
 }
