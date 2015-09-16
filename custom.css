@@ -33,6 +33,10 @@ ul, li {
 	list-style-type: none;
 }
 
+.hide {
+	display: none;
+}
+
 
 /*====== header ======*/
 
