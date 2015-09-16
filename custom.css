@@ -230,11 +230,18 @@ div.project-tech-used {
 
 /*====== contact ======*/
 div.contact {
-	position: relative;
 	height: 800px;
+	padding-top: 45px;
 	width: 100%;
 	text-align: center;
 	background: #3A414C;
+}
+
+div.contact-card {
+	width: 600px;
+	height: 400px;
+	margin: 0 auto;
+	background: #ccc;
 }
 
 /*====== Animations ======*/
@@ -250,6 +257,10 @@ div.contact {
 		opacity: 1;
 		transform: translateY(0);
 	}
+}
+
+.bottom-shadow {
+	box-shadow: 0 4px 2px -2px #000;
 }
 
 /*====== RWD ======*/
