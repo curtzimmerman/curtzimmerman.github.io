@@ -244,6 +244,29 @@ div.contact-card {
 	background: #ccc;
 }
 
+div.card-content {
+	margin: 10px auto;
+	padding: 10px;
+	height: 80%;
+	width: 95%;
+}
+
+div.card-left {
+	float: left;
+	background: white;
+	width: 45%;
+	border: 2px solid black;
+	height: 100%;
+}
+
+div.card-right {
+	float: right;
+	background: white;
+	width: 45%;
+	border: 2px solid black;
+	height: 100%;
+}
+
 /*====== Animations ======*/
 	/*borrowed from ghost.js fade-in-down */
 
