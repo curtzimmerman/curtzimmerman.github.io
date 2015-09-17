@@ -241,13 +241,14 @@ div.contact-card {
 	width: 600px;
 	height: 400px;
 	margin: 0 auto;
+	padding: 10px;
 	background: #ccc;
 }
 
 div.card-content {
-	margin: 10px auto;
+	margin: 0 auto;
 	padding: 10px;
-	height: 80%;
+	height: 90%;
 	width: 95%;
 }
 
@@ -257,6 +258,8 @@ div.card-left {
 	width: 45%;
 	border: 2px solid black;
 	height: 100%;
+	text-align: left;
+	padding: 20px;
 }
 
 div.card-right {
@@ -265,6 +268,33 @@ div.card-right {
 	width: 45%;
 	border: 2px solid black;
 	height: 100%;
+	text-align: left;
+	padding: 20px;
+}
+
+.contact ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.contact input {
+	width: 180px;
+	padding: 3px;
+}
+
+.contact textarea {
+	vertical-align: top;
+	width: 180px;
+	resize: none;
+	padding: 3px;
+}
+
+.card-right form {
+}
+
+.card-right label {
+	line-height: 25px;
 }
 
 /*====== Animations ======*/
