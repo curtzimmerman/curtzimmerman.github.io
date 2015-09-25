@@ -192,13 +192,14 @@ div.about-me-container {
 	bottom: 0;
 	width: 35%;
 	margin: 25px 0 25px 45px;
-	padding: 45px;
-	background: white;
+	background: url(img/paris-city-lights.jpg) no-repeat 0 0;
+	background-size: contain;
 }
 
 .about-me-picture img {
 	max-width: 100%;
 	max-height: auto;
+	min-width: 1
 }
 
 .about-me span {
