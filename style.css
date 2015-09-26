@@ -4,12 +4,17 @@ body {
 	padding-top: 50px;
 }
 
+div.container-fluid.landing {
+	padding: 0;
+}
+
 .hidden {
 	display: none;
 }
 
-div.jumbotron {
+div.container-fluid div.jumbotron {
 	text-align: center;
+	border-radius: 0;
 }
 
 div.about-me {
