@@ -18,7 +18,7 @@ div.container-fluid div.jumbotron {
 }
 
 div.about-me {
-	height: 500px;
+	min-height: 500px;
 	padding-top: 20px;
 }
 
@@ -27,12 +27,24 @@ div.summary p {
 }
 
 div.projects {
-	height: 500px;
+	min-height: 500px;
 	padding-top: 20px;
 	background-color: #e2e2e2;
 }
 
 div.contact {
-	height: 500px;
+	min-height: 500px;
 	padding-top: 20px;
+}
+
+div.contact label {
+	margin: 0;
+}
+
+div.contact label:not(:first-child) {
+	margin-top: 10px;
+}
+
+div.card-content {
+	padding: 10px;
 }
