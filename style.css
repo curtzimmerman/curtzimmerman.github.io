@@ -1,3 +1,33 @@
+/*=== universal ===*/
+
 body {
-	padding-top: 70px;
+	padding-top: 50px;
+}
+
+.hidden {
+	display: none;
+}
+
+div.jumbotron {
+	text-align: center;
+}
+
+div.about-me {
+	height: 500px;
+	padding-top: 20px;
+}
+
+div.summary p {
+	font-size: 1.2em;
+}
+
+div.projects {
+	height: 500px;
+	padding-top: 20px;
+	background-color: #e2e2e2;
+}
+
+div.contact {
+	height: 500px;
+	padding-top: 20px;
 }

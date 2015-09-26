@@ -5,9 +5,9 @@ var animationsModule = (function() {
 
 	// Cache DOM
 	var $html = $('html, body');
-	var $header = $('.header');
+	var $header = $('.navbar');
 	var $heading = $('.heading');
-	var $logo = $header.find("#logo");
+	var $logo = $header.find(".navbar-brand");
 	var $links = $('.links');
 	var $home = $('div.home');
 	var $projects = $('div.projects');
@@ -27,7 +27,7 @@ var animationsModule = (function() {
 	});
 
 	// if the top of the window (minus header height) is lower than the bottom edge of the greeting, show the logo, else hide it 
-	function fadeInLogo() {		
+	function fadeInLogo() {
 		if ( ($(window).scrollTop() - $header.outerHeight()) > ($heading.offset().top + $heading.find("h1").outerHeight())) {
 			$logo.fadeIn('slow');
 		} else {

@@ -11,41 +11,62 @@
 	<title>Curt Zimmerman - Home</title>
 </head>
 <body>
-		<nav class="header navbar navbar-default navbar-fixed-top">	
-			<div class="container">	
-			<a class="navbar-header navbar-brand" id="logo">Curt Zimmerman</a>
-			<ul class="links nav navbar-nav navbar-right">
-				<li><a class="nav-right home selected" href='#'>Home</a></li>
-				<li><a class="nav-right projects" href='#'>Projects</a></li>
-				<li><a class="nav-right contact" href='#'>Contact</a></li>
-				<li><a class="nav-right" id="blog-link" href='http://blog.curtzimmerman.com'>Blog</a></li>
-			</ul>
-			</div>	
-		</nav>
-	<div class='container'>
-				<div class='jumbotron'>
-					<h1 class="heading">Curt Zimmerman</h1>
-					<h2 class="subheading">Hello! I'm a software developer based in Louisville, Kentucky</h2>
-				</div>
+	<nav class="header navbar navbar-default navbar-fixed-top">	
+		<div class="container-fluid">	
+			<div class="navbar-header">
+				<a class="navbar-brand" id="logo">Curt Zimmerman</a>
+				<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">Button</button>
 			</div>
-			<div class="about-me-container">
-				<div class="about-me-text">
-					<span>About Me</span>
-					<p>This is the about me section.</p>
-				</div>
-				<div class="about-me-picture">
-				</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a class="" href='#'>Home</a>
+					</li>
+					<li>
+						<a class="" href='#'>Projects</a>
+					</li>
+					<li>
+						<a class="" href='#'>Contact</a>
+					</li>
+					<li role="separator" class="divider"></li>
+					<li>
+						<a class="" href='http://blog.curtzimmerman.com'>Blog</a>
+					</li>
+				</ul>
 			</div>
 		</div>
-		<div class="projects">
-			<div class="projects-selector">
+	</nav>
+	<div class='container-fluid content'>
+		<div class='jumbotron'>
+			<h1 class="heading">Curt Zimmerman</h1>
+			<h2 class="subheading">Hello! I'm a software developer based in Louisville, Kentucky</h2>
+		</div>
+	</div>
+	<div class="container">
+		<div class="about-me row">
+			<div class="picture col-sm-6">
+				<img class="img-responsive" src="img/paris-city-lights.jpg"> 
+			</div>
+			<div class="summary col-sm-6">
+				<span>About Me</span>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id lectus augue. Duis aliquam libero nibh, et venenatis lacus dapibus ac. Sed sed aliquet eros, sit amet ullamcorper lacus. Fusce sed lectus in metus finibus blandit. Aenean cursus efficitur ex sed fringilla. Pellentesque luctus non neque quis condimentum. Maecenas a eleifend augue. Pellentesque vitae metus efficitur, consectetur ante condimentum, aliquet ex. Donec varius nibh a hendrerit cursus. In hac habitasse platea dictumst. In eu convallis risus. Pellentesque pharetra neque eget felis facilisis laoreet.
+
+					Cras mollis malesuada dolor. Sed fringilla risus id venenatis vulputate. Pellentesque viverra laoreet dui, eget aliquet libero efficitur nec. Nullam in elit nulla. Proin ac tellus pulvinar, commodo est mollis, mattis risus. Maecenas lacus justo, laoreet a lacinia facilisis, pulvinar at magna. Fusce aliquet dolor a est efficitur volutpat. Nullam vel finibus ipsum. Suspendisse congue ipsum ut aliquet commodo. Proin gravida vitae augue et convallis. In quam dolor, posuere sit amet facilisis molestie, dignissim id lectus.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="projects row">
+			<div class="projects-selector col-sm-6">
 				<a href="#" id="craigslist"><div class="project"><span>Craigslist Scraper</span></div></a>
 				<a href="#" id="facebook"><div class="project"><span>Facebook Clone</span></div></a>
 				<a href="#"><div class="project"></div></a>
 				<a href="#"><div class="project"></div></a>
 				<a href="#"><div class="project"></div></a>
 			</div>
-			<div class="information about-craigslist">
+			<div class="information about-craigslist col-sm-3">
 				<div class="project-description">
 					<h2 class="project-title">Craigslist Scraper</h2>
 					<a href="#">Check it out</a>
@@ -53,7 +74,7 @@
 					<p class="project-summary">A web scraper written with Ruby on Rails and Nokgiri
 					</p>	
 				</div>
-				<div class="project-tech-used">
+				<div class="project-tech-used col-sm-3">
 					<ul>
 						<li>Ruby on Rails</li>
 						<li>PostgreSQL</li>
@@ -62,7 +83,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="information about-facebook hide">
+			<div class="information about-facebook hide col-sm-6">
 				<div class="project-description">
 					<h2 class="project-title">Facebook Clone</h2>
 					<a href="#">Check it out</a>
@@ -70,7 +91,7 @@
 					<p class="project-summary">Final Project for the Ruby on Rails course from <a href="http://www.theodinproject.com/ruby-on-rails/final-project">The Odin Project</a>. A clone of facebook written with Ruby on Rails, with login functionality provided by Devise. Also possible to login using Facebook information with their developer's API. 
 					</p>	
 				</div>
-				<div class="project-tech-used">
+				<div class="project-tech-used col-sm-3">
 					<ul>
 						<li>Ruby on Rails</li>
 						<li>PostgreSQL</li>
@@ -81,20 +102,22 @@
 				</div>
 			</div>
 		</div>
-		<div class="contact">
-			<div class="contact-card bottom-shadow">
-				<div class="card-content">
-					<div class="card-left">
-								<h2>Github</h2>
-								<a href="https://github.com/czimmerman9">Github</a>
-							
-								<h2>Email</h2>
-								<a href="mailto:czimmerman9@gmail.com">czimmerman9@gmail.com</a>
-							
-								<h2>Phone</h2>
-								<a href="tel:502-619-1110">502-619-1110</a>
+	</div>
+	<div class="container">
+		<div class="contact row">
+			<div class="contact-card col-xs-6 col-xs-offset-3">
+				<div class="card-content row">
+					<div class="card-left col-sm-6">
+						<h2>Github</h2>
+						<a href="https://github.com/czimmerman9">Github</a>
+					
+						<h2>Email</h2>
+						<a href="mailto:czimmerman9@gmail.com">czimmerman9@gmail.com</a>
+					
+						<h2>Phone</h2>
+						<a href="tel:502-619-1110">502-619-1110</a>
 					</div>
-					<div class="card-right">
+					<div class="card-right col-sm-6">
 						<h2>Contact</h2>
 						<form action="//formspree.io/czimmerman9@gmail.com" method="post" target="_blank">
 							<h3 for="name">Name</h3>
@@ -111,6 +134,7 @@
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/animationsModule.js"></script>
 	<script type="text/javascript" src="js/linksModule.js"></script>
 </body>
