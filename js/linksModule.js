@@ -1,16 +1,16 @@
 var linksModule = (function() {
 	
 	//cache DOM
-	var $projects_selector = $('div.projects-selector');
+	var $carousel_inner = $('div.carousel-inner');
 
 
 	//Bind events
-	$projects_selector.find('a').on('click', changeProjectContent.bind(this));
+	$carousel_inner.on('click', changeProjectContent);
 
 	//Define functions
-	function changeProjectContent(project) {
-		project.preventDefault();
-		var id = project.currentTarget.id;
+	function changeProjectContent(event) {
+		event.preventDefault();
+		var id = $carousel_inner.find('div.active a')[0].id;
 		$('div.information:not(.hide)').addClass('hide');
 		$('div.about-' + id).removeClass('hide');
 	}
