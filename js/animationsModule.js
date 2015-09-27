@@ -8,7 +8,7 @@ var animationsModule = (function() {
 	var $header = $('.navbar');
 	var $heading = $('.heading');
 	var $logo = $header.find(".navbar-brand");
-	var $links = $('.links');
+	var $links = $('ul.navbar-nav');
 	var $home = $('div.home');
 	var $projects = $('div.projects');
 	var $contact = $('div.contact');
@@ -44,26 +44,26 @@ var animationsModule = (function() {
 		return false;
 	}
 
-	function removeAllSelected(element) {
-		element.children('.selected').removeClass('selected');
-	}
-
 	function highlightLinkOnScroll() {
 		var windowCenter = ($(window).scrollTop() + ($(window).height() / 2));
 		var projectsTop = $projects.offset().top;
 		var contactTop = $contact.offset().top;
 
-		removeAllSelected($('.links').children());
+		removeAllSelected($links.children());
 		
 		// highlight link based on middle of window
 		if (windowCenter < projectsTop) {
-			$links.find(".home").addClass("selected");
+			$links.find(".home").addClass("underline");
 		} else if (windowCenter > projectsTop && windowCenter < contactTop) {
-			$links.find(".projects").addClass("selected");
+			$links.find(".projects").addClass("underline");
 		} else {
-			$links.find(".contact").addClass("selected");
+			$links.find(".contact").addClass("underline");
 		}
 		return false;
+	}
+
+	function removeAllSelected(element) {
+		element.children('.underline').removeClass('underline');
 	}
 
 	function menuReveal() {

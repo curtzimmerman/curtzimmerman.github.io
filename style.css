@@ -12,6 +12,10 @@ div.container-fluid.landing {
 	display: none;
 }
 
+.underline {
+	border-bottom: 5px solid #79b49b;
+}
+
 div.container-fluid div.jumbotron {
 	text-align: center;
 	border-radius: 0;
@@ -27,7 +31,7 @@ div.summary p {
 }
 
 div#project-selector-carousel {
-	min-height: 500px;
+	
 }
 
 .carousel-inner img {
@@ -38,6 +42,10 @@ div#project-selector-carousel {
 div.projects {
 	min-height: 500px;
 	background-color: #e2e2e2;
+}
+
+div.project-header {
+	text-align: center;
 }
 
 div.contact {

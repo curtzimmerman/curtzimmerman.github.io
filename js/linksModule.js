@@ -2,17 +2,18 @@ var linksModule = (function() {
 	
 	//cache DOM
 	var $carousel_inner = $('div.carousel-inner');
+	var $carousel = $('div#project-selector-carousel');
 
 
 	//Bind events
-	$carousel_inner.on('click', changeProjectContent);
+	$carousel.on('slid.bs.carousel', changeProjectContent);
 
 	//Define functions
 	function changeProjectContent(event) {
-		event.preventDefault();
 		var id = $carousel_inner.find('div.active a')[0].id;
 		$('div.information:not(.hide)').addClass('hide');
 		$('div.about-' + id).removeClass('hide');
+		return false;
 	}
 
 });
