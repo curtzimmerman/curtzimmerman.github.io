@@ -4,6 +4,11 @@ body {
 	padding-top: 50px;
 }
 
+img {
+	max-height: 300px;
+	max-width: auto;
+}
+
 div.container-fluid.landing {
 	padding: 0;
 }
@@ -13,12 +18,31 @@ div.container-fluid.landing {
 }
 
 .underline {
-	border-bottom: 5px solid #79b49b;
+	border-bottom: 5px solid #00BC62;
+}
+
+nav.navbar {
+	background-color: #056CAF;
+	border-bottom: none;
+}
+
+.navbar-default .navbar-nav li a {
+	color: #eee;
+	font-weight: bold;
+}
+
+#logo {
+	color: #eee;
+}
+
+.jumbotron {
+	color: #eee;
 }
 
 div.container-fluid div.jumbotron {
 	text-align: center;
 	border-radius: 0;
+	background-color: #056CAF;
 }
 
 div.about-me {
@@ -31,7 +55,7 @@ div.summary p {
 }
 
 div#project-selector-carousel {
-	
+	max-width: auto;
 }
 
 .carousel-inner img {
@@ -51,6 +75,11 @@ div.project-header {
 div.contact {
 	min-height: 500px;
 	padding-top: 20px;
+	background-color: #212121;
+}
+
+div.contact-card {
+	background-color: white;
 }
 
 div.contact label {
@@ -63,4 +92,8 @@ div.contact label:not(:first-child) {
 
 div.card-content {
 	padding: 10px;
+}
+
+div.card-left {
+	text-align: right;
 }
