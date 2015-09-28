@@ -60,7 +60,7 @@ div#project-selector-carousel {
 
 .carousel-inner img {
 	min-height: 100%;
-	width: 100%;
+	min-width: 100%;
 }
 
 div.projects {

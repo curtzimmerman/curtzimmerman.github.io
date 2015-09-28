@@ -5,7 +5,7 @@ var animationsModule = (function() {
 
 	// Cache DOM
 	var $html = $('html, body');
-	var $header = $('div#navbar');
+	var $header = $('div.navbar-header');
 	var $heading = $('.heading');
 	var $logo = $header.find(".navbar-brand");
 	var $navbar = $('ul.navbar-nav');
