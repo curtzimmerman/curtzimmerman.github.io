@@ -8,23 +8,17 @@ var animationsModule = (function() {
 	var $header = $('div#navbar');
 	var $heading = $('.heading');
 	var $logo = $header.find(".navbar-brand");
-	var $links = $('ul.navbar-nav');
+	var $navbar = $('ul.navbar-nav');
 	var $home = $('div.home');
 	var $projects = $('div.projects');
 	var $contact = $('div.contact');
-	var $menu = $('#menu');
 
 	//Bind Events
 	$(window).on('scroll', fadeInLogo);
 	$(window).on('scroll', highlightLinkOnScroll);
-	$links.find('a').on('click', jumpToSection);
-	$menu.on('click', function(e) {
-		e.preventDefault();
-		menuReveal();
-	});
-	$(window).on('resize scroll', function() {
-			menuHide();
-	});
+	$navbar.find('a').on('click', jumpToSection);
+	$navbar.find('a').on('click', closeMenu);
+
 
 	// if the top of the window (minus header height) is lower than the bottom edge of the greeting, show the logo, else hide it 
 	function fadeInLogo() {
@@ -49,15 +43,15 @@ var animationsModule = (function() {
 		var projectsTop = $projects.offset().top;
 		var contactTop = $contact.offset().top;
 
-		removeAllSelected($links.children());
+		removeAllSelected($navbar.children());
 		
 		// highlight link based on middle of window
 		if (windowCenter < projectsTop) {
-			$links.find(".home").addClass("underline");
+			$navbar.find(".home").addClass("underline");
 		} else if (windowCenter > projectsTop && windowCenter < contactTop) {
-			$links.find(".projects").addClass("underline");
+			$navbar.find(".projects").addClass("underline");
 		} else {
-			$links.find(".contact").addClass("underline");
+			$navbar.find(".contact").addClass("underline");
 		}
 		return false;
 	}
@@ -66,22 +60,8 @@ var animationsModule = (function() {
 		element.children('.underline').removeClass('underline');
 	}
 
-	function menuReveal() {
-		if ($links.css('display') === 'none') {
-			$links.slideDown();
-		} else {
-			$links.slideUp();
-		}
-		return false;
-	}
-
-	function menuHide() {
-		if ($(window).width() < 500) {
-			$links.css("display", "none");
-		} else {
-			$links.css("display", "block");
-		}
-		return false;
+	function closeMenu(event) {
+		$('.navbar-collapse').collapse('hide');
 	}
 
 	return {

@@ -97,3 +97,11 @@ div.card-content {
 div.card-left {
 	text-align: right;
 }
+
+
+@media only screen and (max-width: 767px) {
+
+	.underline {
+		border-bottom: none;
+	}
+}
