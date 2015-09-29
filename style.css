@@ -80,6 +80,8 @@ div.contact {
 
 div.contact-card {
 	background-color: white;
+	margin: 0 auto;
+	width: 600px;
 }
 
 div.contact label {
@@ -103,5 +105,11 @@ div.card-left {
 
 	.underline {
 		border-bottom: none;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	div.contact-card {
+		width: 100%;
 	}
 }
