@@ -5,7 +5,7 @@ var animationsModule = (function() {
 
 	// Cache DOM
 	var $html = $('html, body');
-	var $header = $('div.navbar-header');
+	var $header = $('div#navbar');
 	var $heading = $('.heading');
 	var $logo = $header.find(".navbar-brand");
 	var $navbar = $('ul.navbar-nav');
@@ -36,7 +36,8 @@ var animationsModule = (function() {
 		$location = $(location.target);
 		$scrollPosition = $('div.' + $location.text().toLowerCase());
 		topMargin = parseInt($scrollPosition.css("margin-top"));
-		$html.animate({scrollTop: $scrollPosition.offset().top - topMargin - $header.outerHeight()}, 600);
+		console.log("header outerHeight: " + $header.outerHeight());
+		$html.animate({scrollTop: $scrollPosition.offset().top  - topMargin - $header.outerHeight()}, 600);
 		return false;
 	}
 

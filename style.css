@@ -15,6 +15,7 @@ div.container-fluid.landing {
 
 .underline {
 	border-bottom: 5px solid #00BC62;
+	color: #00BC62;
 }
 
 nav.navbar {
@@ -25,6 +26,10 @@ nav.navbar {
 .navbar-default .navbar-nav li a {
 	color: #eee;
 	font-weight: bold;
+}
+
+.navbar-default .navbar-nav li a:focus {
+	color: #eee;
 }
 
 #logo {
