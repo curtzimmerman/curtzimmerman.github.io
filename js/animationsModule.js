@@ -9,15 +9,17 @@ var animationsModule = (function() {
 	var $heading = $('.heading');
 	var $logo = $header.find(".navbar-brand");
 	var $navbar = $('ul.navbar-nav');
-	var $home = $('div.home');
 	var $projects = $('div.projects');
-	var $contact = $('div.contact');
+	var $contact = $('div.contact');	
+	var $carousel_inner = $('div.carousel-inner');
+	var $carousel = $('div#project-selector-carousel');
 
 	//Bind Events
 	$(window).on('scroll', fadeInLogo);
 	$(window).on('scroll', highlightLinkOnScroll);
 	$navbar.find('a').on('click', jumpToSection);
-	$navbar.find('a').on('click', closeMenu);
+	$navbar.find('a').on('click', closeMenu);	
+	$carousel.on('slid.bs.carousel', changeProjectContent);
 
 
 	// if the top of the window (minus header height) is lower than the bottom edge of the greeting, show the logo, else hide it 
@@ -64,9 +66,17 @@ var animationsModule = (function() {
 		$('.navbar-collapse').collapse('hide');
 	}
 
+	function changeProjectContent(event) {
+		var id = $carousel_inner.find('div.active a')[0].id;
+		$('div.information:not(.hide)').addClass('hide');
+		$('div.about-' + id).removeClass('hide');
+		return false;
+	}
+
 	return {
 		fadeInLogo: fadeInLogo,
-		jumpToSection: jumpToSection
+		jumpToSection: jumpToSection,
+		changeProjectContent: changeProjectContent
 	};
 
 });

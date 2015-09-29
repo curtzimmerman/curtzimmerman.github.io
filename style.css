@@ -13,10 +13,6 @@ div.container-fluid.landing {
 	padding: 0;
 }
 
-.hidden {
-	display: none;
-}
-
 .underline {
 	border-bottom: 5px solid #00BC62;
 }
@@ -32,6 +28,7 @@ nav.navbar {
 }
 
 #logo {
+	display: none;
 	color: #eee;
 }
 
