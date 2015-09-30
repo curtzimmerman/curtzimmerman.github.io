@@ -101,7 +101,24 @@ div.card-content {
 }
 
 div.card-left {
-	text-align: right;
+	text-align: center;
+}
+
+div.card-right {
+	text-align: center;
+}
+
+button#message-modal-button {
+	margin: 0 auto;
+	margin-top: 5px;
+}
+
+div.modal-body {
+	text-align: center;
+}
+
+div.modal-body > label {
+	text-align: left;
 }
 
 
