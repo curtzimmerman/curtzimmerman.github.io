@@ -5,7 +5,7 @@ var animationsModule = (function() {
 
 	// Cache DOM
 	var $html = $('html, body');
-	var $header = $('div#navbar');
+	var $header = $('div.navbar-header');
 	var $heading = $('.heading');
 	var $logo = $header.find(".navbar-brand");
 	var $navbar = $('ul.navbar-nav');
@@ -13,6 +13,7 @@ var animationsModule = (function() {
 	var $contact = $('div.contact');	
 	var $carousel_inner = $('div.carousel-inner');
 	var $carousel = $('div#project-selector-carousel');
+	var headerHeight = 50; //px
 
 	//Bind Events
 	$(window).on('scroll', fadeInLogo);
@@ -24,7 +25,7 @@ var animationsModule = (function() {
 
 	// if the top of the window (minus header height) is lower than the bottom edge of the greeting, show the logo, else hide it 
 	function fadeInLogo() {
-		if ( ($(window).scrollTop() - $header.outerHeight()) > ($heading.offset().top + $heading.find("h1").outerHeight())) {
+		if ( ($(window).scrollTop() - headerHeight) > ($heading.offset().top + $heading.find("h1").outerHeight())) {
 			$logo.fadeIn('slow');
 		} else {
 			$logo.fadeOut('slow');
@@ -36,8 +37,7 @@ var animationsModule = (function() {
 		$location = $(location.target);
 		$scrollPosition = $('div.' + $location.text().toLowerCase());
 		topMargin = parseInt($scrollPosition.css("margin-top"));
-		console.log("header outerHeight: " + $header.outerHeight());
-		$html.animate({scrollTop: $scrollPosition.offset().top  - topMargin - $header.outerHeight()}, 600);
+		$html.animate({scrollTop: $scrollPosition.offset().top  - topMargin - headerHeight}, 600);
 		return false;
 	}
 

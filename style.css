@@ -74,6 +74,10 @@ div.project-header {
 	text-align: center;
 }
 
+div.projects-info {
+	margin-top: 10px;
+}
+
 div.contact {
 	min-height: 500px;
 	padding-top: 20px;
