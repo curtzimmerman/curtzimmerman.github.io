@@ -4,10 +4,6 @@ body {
 	padding-top: 50px;
 }
 
-img {
-	max-height: 300px;
-	max-width: auto;
-}
 
 div.container-fluid.landing {
 	padding: 0;
@@ -45,6 +41,11 @@ div.container-fluid div.jumbotron {
 	text-align: center;
 	border-radius: 0;
 	background-color: #056CAF;
+}
+
+img#portrait {
+	height: 400px;
+	width: auto;
 }
 
 div.about-me {
