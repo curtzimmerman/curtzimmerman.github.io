@@ -20,6 +20,7 @@ var animationsModule = (function() {
 	$(window).on('scroll', highlightLinkOnScroll);
 	$navbar.find('a').on('click', jumpToSection);
 	$navbar.find('a').on('click', closeMenu);	
+	$('#about-me-contact').on('click', jumpToSection);
 	$carousel.on('slid.bs.carousel', changeProjectContent);
 
 
@@ -35,7 +36,7 @@ var animationsModule = (function() {
 	// Jump to top of div with matching class name if link is clicked
 	function jumpToSection(location) {
 		$location = $(location.target);
-		$scrollPosition = $('div.' + $location.text().toLowerCase());
+		$scrollPosition = $('div.' + $location[0].className.toLowerCase());
 		topMargin = parseInt($scrollPosition.css("margin-top"));
 		$html.animate({scrollTop: $scrollPosition.offset().top  - topMargin - headerHeight}, 600);
 		return false;
