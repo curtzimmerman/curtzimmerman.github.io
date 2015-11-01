@@ -1,5 +1,9 @@
 /*=== universal ===*/
 
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
 body {
 	padding-top: 50px;
 }
@@ -14,6 +18,12 @@ div.container-fluid.landing {
 	color: #00BC62;
 }
 
+.fa-lg {
+	font-size: 40px;
+	margin: 0 5px;
+}
+
+/*=== navbar === */
 nav.navbar {
 	background-color: #056CAF;
 	border-bottom: none;
@@ -32,6 +42,8 @@ nav.navbar {
 	display: none;
 	color: #eee;
 }
+
+/*=== splash ===*/
 
 .jumbotron {
 	color: #eee;
@@ -57,6 +69,13 @@ div.summary p {
 	font-size: 1.2em;
 }
 
+.jumbotron a {
+	text-decoration: none;
+	color: white;
+}
+
+/*=== projects === */
+
 div#project-selector-carousel {
 	max-width: auto;
 }
@@ -68,7 +87,7 @@ div#project-selector-carousel {
 
 div.projects {
 	min-height: 500px;
-	background-color: #e2e2e2;
+	background-color: #f7f7f7;
 }
 
 div.project-header {
@@ -79,10 +98,13 @@ div.projects-info {
 	margin-top: 10px;
 }
 
+
+/* === contact === */
+
 div.contact {
 	min-height: 750px;
 	padding-top: 20px;
-	background-color: #212121;
+	background-color: #777777;
 }
 
 div.contact-card {
@@ -122,6 +144,7 @@ div.modal-body > label {
 	text-align: left;
 }
 
+/*=== media queries ===*/
 
 @media only screen and (max-width: 767px) {
 
