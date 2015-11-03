@@ -43,16 +43,16 @@ var animationsModule = (function() {
 	}
 
 	function highlightLinkOnScroll() {
-		var windowCenter = ($(window).scrollTop() + ($(window).height() / 2));
+		var windowTopThird = ($(window).scrollTop() + ($(window).height() / 3));
 		var projectsTop = $projects.offset().top;
 		var contactTop = $contact.offset().top;
 
 		removeAllSelected($navbar.children());
 		
 		// highlight link based on middle of window
-		if (windowCenter < projectsTop) {
+		if (windowTopThird < projectsTop) {
 			$navbar.find(".home").addClass("underline");
-		} else if (windowCenter > projectsTop && windowCenter < contactTop) {
+		} else if (windowTopThird > projectsTop && windowTopThird < contactTop) {
 			$navbar.find(".projects").addClass("underline");
 		} else {
 			$navbar.find(".contact").addClass("underline");

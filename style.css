@@ -47,6 +47,7 @@ nav.navbar {
 
 .jumbotron {
 	color: #eee;
+	margin-bottom: 0;
 }
 
 div.container-fluid div.jumbotron {
