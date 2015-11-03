@@ -4,6 +4,11 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Cabin', sans-serif;
+	font-weight: 600;
+}
+
 body {
 	padding-top: 50px;
 }
@@ -21,6 +26,10 @@ div.container-fluid.landing {
 .fa-lg {
 	font-size: 40px;
 	margin: 0 5px;
+}
+
+.header {
+	text-align: center;
 }
 
 /*=== navbar === */
@@ -88,7 +97,7 @@ div#project-selector-carousel {
 
 div.projects {
 	min-height: 500px;
-	background-color: #f7f7f7;
+	background-color: #fff;
 }
 
 div.project-header {
@@ -103,46 +112,15 @@ div.projects-info {
 /* === contact === */
 
 div.contact {
-	min-height: 750px;
+	min-height: 450px;
 	padding-top: 20px;
-	background-color: #777777;
+	background-color: #f7f7f7;
+	font-family: 'Cabin', sans-serif;
+	font-weight: 600;
 }
 
-div.contact-card {
-	background-color: white;
-}
-
-div.contact label {
-	margin: 0;
-}
-
-div.contact label:not(:first-child) {
-	margin-top: 10px;
-}
-
-div.card-content {
-	padding: 10px;
-}
-
-div.card-left {
+div.contact h2 {
 	text-align: center;
-}
-
-div.card-right {
-	text-align: center;
-}
-
-button#message-modal-button {
-	margin: 0 auto;
-	margin-top: 5px;
-}
-
-div.modal-body {
-	text-align: center;
-}
-
-div.modal-body > label {
-	text-align: left;
 }
 
 /*=== media queries ===*/
