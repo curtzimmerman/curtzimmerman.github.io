@@ -10,7 +10,7 @@
 	<title>Curt Zimmerman - Home</title>
 </head>
 <body>
-	<nav class="header navbar navbar-default navbar-fixed-top">	
+	<nav class="navbar navbar-default navbar-fixed-top">	
 		<div class="container-fluid">	
 			<div class="navbar-header">
 				<a class="navbar-brand" id="logo">Curt Zimmerman</a>
@@ -19,13 +19,13 @@
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
 					<li>
-						<a class="home underline" href='#'>Home</a>
+						<a class="home underline" data="home" href='#'>Home</a>
 					</li>
 					<li>
-						<a class="projects" href='#'>Projects</a>
+						<a class="projects" data="projects" href='#'>Projects</a>
 					</li>
 					<li>
-						<a class="contact" href='#'>Contact</a>
+						<a class="contact" data="contact" href='#'>Contact</a>
 					</li>
 					<li>
 						<a class="" target="_blank" href="http://resume.curtzimmerman.com">Resume</a>
@@ -36,90 +36,19 @@
 	</nav>
 	<div class='container-fluid landing home'>
 		<div class='jumbotron'>
-			<h1 class="header" id="name">Curt Zimmerman</h1>
-			<a href=""><h3 class="subheading">Software Developer</h3></a>
+			<h1 class="heading" id="name">Curt Zimmerman</h1>
+			<a href=""><h3 class="heading">Software Developer</h3></a>
 			<a href="https://github.com/czimmerman9"><span class="fa fa-github fa-lg"></span></a>
-			<a href=""><span class="fa fa-linkedin-square fa-lg"></span></a>
+			<a href="https://www.linkedin.com/in/czimmerman9"><span class="fa fa-linkedin-square fa-lg"></span></a>
 		</div>
 	</div>
 	<div class="projects container-fluid">
-		<div class="project-header row">
-			<h2 class="col-xs-6 col-xs-offset-3 row">Projects</h2>
-		</div>
-		<div class="projects-info row">
-			<div id="project-selector-carousel" class="project-selector col-sm-6 col-lg-4 col-lg-offset-2 carousel slide" data-ride="carousel" data-interval="0">
-				<ol class="carousel-indicators">
-					<li class="active" data-target="#project-selector-carousel" data-slide-to="0"></li>
-					<li data-target="#project-selector-carousel" data-slide-to="1"></li>
-				</ol>
-				<div class="carousel-inner" role="listbox">
-					<div class="item active">
-						<a href="#" id="craigslist">
-							<img src="img/clscraper.jpg" alt="testing" class="">
-							<div class="carousel-caption">
-								<h3>Craigslist Scraper</h3>
-							</div>
-						</a>
-					</div>
-					<div class="item">						
-						<a href="#" id="facebook">
-							<img src="img/grey_wash_wall/grey_wash_wall.png" alt="testing" class="">
-							<div class="carousel-caption">
-								<h3>Facebook Clone</h3>
-							</div>
-						</a>
-					</div>
-				</div>
-				<a class="left carousel-control" href="#project-selector-carousel" role="button" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="right carousel-control" href="#project-selector-carousel" role="button" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right"></span>
-					<span class="sr-only">Next</span>
-				</a>
-			</div>
-			<div class="information about-craigslist col-sm-6">
-				<div class="project-description">
-					<h3 class="project-title">Craigslist Scraper</h3> 
-					<a href="https://github.com/czimmerman9/cl-scraper">GitHub Repository</a>
-					<p class="project-summary">A web scraper written with Ruby on Rails and Nokgiri
-					</p>	
-				</div>
-				<div class="project-tech-used col-sm-12">
-					<ul>
-						<li>Ruby on Rails</li>
-						<li>PostgreSQL</li>
-						<li>Bootstrap</li>
-						<li>Nokogiri</li>
-					</ul>
-				</div>
-			</div>
-			<div class="information about-facebook hide col-sm-6">
-				<div class="project-description">
-					<h3 class="project-title">Facebook Clone</h3>
-					<a href="http://aqueous-ravine-6303.herokuapp.com/">Check it out</a> | 
-					<a href="https://github.com/czimmerman9/odin-facebook-clone">GitHub Repository</a>
-					<p class="project-summary">Final Project for the Ruby on Rails course from <a href="http://www.theodinproject.com/ruby-on-rails/final-project">The Odin Project</a>. A clone of facebook written with Ruby on Rails, with login functionality provided by Devise. Also possible to login using Facebook information with their developer's API. 
-					</p>	
-				</div>
-				<div class="project-tech-used col-sm-12">
-					<ul>
-						<li>Ruby on Rails</li>
-						<li>PostgreSQL</li>
-						<li>Devise Gem</li>
-						<li>Omniauth Authentication</li>
-						<li>Facebook Developer's API</li>
-						<li>Heroku Deployment</li>
-					</ul>
-				</div>
-			</div>
-		</div>
+		<h2 class="heading">Projects</h2>	
 	</div>
 	<div class="container-fluid">
 		<div class="contact row">		
 			<form class="col-sm-8 col-sm-offset-2" action="//formspree.io/czimmerman9@gmail.com" method="post" target="_blank">
-				<h2 class="">Contact</h2>
+				<h2 class="heading">Contact</h2>
 				<div class="form-group">
 					<label for="name">Name</label><br>
 			    <input type="text" class="form-control" name="name" placeholder="Your name"><br>
@@ -132,14 +61,18 @@
 			</form>
 		</div>
 		<div class="contact-info row">
-			<h4><span class="fa fa-github fa-lg"></span> Github</h4>
-			<a href="https://github.com/czimmerman9">Link</a>
-		
-			<h4><span class="fa fa-envelope fa-lg"></span> Email</h4>
-			<a href="mailto:czimmerman9@gmail.com">czimmerman9@gmail.com</a>
-		
-			<h4><span class="fa fa-phone fa-lg"></span> Phone</h4>
-			<a href="tel:502-619-1110">502-619-1110</a>
+			<div class="col-sm-4 col-sm-offset-1">				
+				<a href="https://github.com/czimmerman9"><h4><span class="fa fa-github fa-lg"></span> Github</h4></a>
+			
+				<a href="mailto:czimmerman9@gmail.com"><h4><span class="fa fa-envelope fa-lg"></span> czimmerman9@gmail.com</h4></a>
+			
+				<a href="tel:502-619-1110"><h4><span class="fa fa-phone fa-lg"></span> 502-619-1110</h4></a>
+
+				<a href="https://www.linkedin.com/in/czimmerman9"><h4><span class="fa fa-linkedin-square fa-lg"></span> LinkedIn</h4></a>
+			</div>
+		</div>
+		<div class="footer row">
+			<p class="footer-text">© Copyright Curt Zimmerman 2015</p>
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

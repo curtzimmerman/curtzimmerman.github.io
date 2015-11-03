@@ -35,10 +35,10 @@ var animationsModule = (function() {
 
 	// Jump to top of div with matching class name if link is clicked
 	function jumpToSection(location) {
-		$location = $(location.target);
-		$scrollPosition = $('div.' + $location[0].className.toLowerCase());
-		topMargin = parseInt($scrollPosition.css("margin-top"));
-		$html.animate({scrollTop: $scrollPosition.offset().top  - topMargin - headerHeight}, 600);
+		console.log(location);
+		$scrollLocation = $('div.' + location.currentTarget.attributes['data'].nodeValue);
+		topMargin = parseInt($scrollLocation.css("margin-top"));
+		$html.animate({scrollTop: $scrollLocation.offset().top  - topMargin - headerHeight}, 600);
 		return false;
 	}
 

@@ -25,10 +25,10 @@ div.container-fluid.landing {
 
 .fa-lg {
 	font-size: 40px;
-	margin: 0 5px;
+	margin: 5px;
 }
 
-.header {
+.heading {
 	text-align: center;
 }
 
@@ -72,7 +72,7 @@ img#portrait {
 
 div.about-me {
 	min-height: 500px;
-	padding-top: 20px;
+	padding: 20px 0;
 }
 
 div.summary p {
@@ -98,10 +98,7 @@ div#project-selector-carousel {
 div.projects {
 	min-height: 500px;
 	background-color: #fff;
-}
-
-div.project-header {
-	text-align: center;
+	padding: 20px 0;
 }
 
 div.projects-info {
@@ -112,27 +109,46 @@ div.projects-info {
 /* === contact === */
 
 div.contact {
-	min-height: 450px;
-	padding-top: 20px;
+	min-height: 550px;
+	padding: 20px 0;
 	background-color: #f7f7f7;
 	font-family: 'Cabin', sans-serif;
 	font-weight: 600;
 }
 
-div.contact h2 {
-	text-align: center;
+/*=== contact info === */
+
+div.contact-info {
+	min-height: 200px;
+	padding: 20px 0;
+	background-color: #024069;
+	color: white;
 }
 
+div.contact-info a {
+	text-decoration: none;
+	color: white;
+}
+
+/*=== footer === */
+
+div.footer {
+	min-height: 80px;
+	padding-top: 35px;
+	background-color: #001827;
+}
+
+.footer-text {
+	font-size: .8em;
+	color: #999;
+	text-align: center;
+	line-height: 10px
+}
 /*=== media queries ===*/
 
 @media only screen and (max-width: 767px) {
 
 	.underline {
 		border-bottom: none;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	div.contact-card {
 	}
 }
