@@ -28,6 +28,11 @@ div.container-fluid.landing {
 	margin: 5px;
 }
 
+.fa-md {
+	font-size: 30px;
+	margin: 5px;
+}
+
 .heading {
 	text-align: center;
 }
@@ -63,20 +68,6 @@ div.container-fluid div.jumbotron {
 	text-align: center;
 	border-radius: 0;
 	background-color: #056CAF;
-}
-
-img#portrait {
-	height: 400px;
-	width: auto;
-}
-
-div.about-me {
-	min-height: 500px;
-	padding: 20px 0;
-}
-
-div.summary p {
-	font-size: 1.2em;
 }
 
 .jumbotron a {
@@ -116,6 +107,7 @@ div.contact {
 	font-weight: 600;
 }
 
+
 /*=== contact info === */
 
 div.contact-info {
@@ -129,6 +121,22 @@ div.contact-info a {
 	text-decoration: none;
 	color: white;
 }
+
+div.portrait {
+	text-align: center;
+	padding-top: 10px;
+}
+
+#portrait {
+	height: 180px;
+	width: auto;
+}
+
+div.about-me {
+	text-align: center;
+	font-weight: 400;
+}
+
 
 /*=== footer === */
 
