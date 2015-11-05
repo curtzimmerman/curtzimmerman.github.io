@@ -88,12 +88,25 @@ div#project-selector-carousel {
 
 div.projects {
 	min-height: 500px;
-	background-color: #fff;
+	background-color: #f1f1f1;
 	padding: 20px 0;
 }
 
 div.projects-info {
 	margin-top: 10px;
+}
+
+div.projects-listing {
+	padding-top: 20px;
+}
+
+div.project {
+	text-align: center;
+}
+
+div.project img {
+	height: 250px;
+	width: 375px;
 }
 
 
@@ -102,7 +115,7 @@ div.projects-info {
 div.contact {
 	min-height: 550px;
 	padding: 20px 0;
-	background-color: #f7f7f7;
+	background-color: #fff;
 	font-family: 'Cabin', sans-serif;
 	font-weight: 600;
 }
