@@ -107,6 +107,9 @@ div.project {
 div.project img {
 	height: 250px;
 	width: 375px;
+	-webkit-box-shadow: 2px 2px 1px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow:    2px 2px 1px 0px rgba(50, 50, 50, 0.5);
+	box-shadow:         2px 2px 1px 0px rgba(50, 50, 50, 0.5);
 }
 
 
