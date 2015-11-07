@@ -47,14 +47,58 @@
 			<div class="projects-listing">
 				<div class="col-sm-6 project">
 					<div class="img-wrapper">
-						<img class="" src="img/clscraper-web.png">
-						<div class="overlay"></div>
+						<a href="" data-toggle="modal" data-target="#modal1" >
+							<img class="project-link" src="img/clscraper-web.png">
+							<div class="overlay">
+								<h3>Web Scraper</h3>
+								<span class="fa fa-expand fa-lg"></span>
+							</div>
+						</a>
+					</div>
+					<div class="modal fade" id="modal1">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+									<h3>Craigslist Scraper</h3>
+								</div>
+								<div class="modal-body">
+									<h4>A web scraper written using Ruby on Rails</h4>
+									<img class="screenshot img-thumbnail" src="img/clscraper1.png">
+									<img class="screenshot img-thumbnail" src="img/clscraper2.png">
+									<p>Craigslist Scraper is a web scraper that was written to make searching nearby cities easier. Using Ruby on Rails and the Ruby Gem <a href="https://github.com/sparklemotion/nokogiri">Nokogiri</a>, it makes efficient http requests and parses the HTML that is received. Users can select their home city, and the app will automatically search the nearby cities for hits to their search query.</p>
+									<h5>Technologies used:</h5>
+									<p>Ruby on Rails, PostgreSQL, Bootstrap, <a href="https://github.com/sparklemotion/nokogiri">Nokogiri</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="col-sm-6 project">
 					<div class="img-wrapper">
-						<img class="" src="img/fb-odin.jpg">
-						<div class="overlay"></div>
+						<a href="" data-toggle="modal" data-target="#modal2">
+							<img class="project-link" src="img/fb-odin.jpg">
+							<div class="overlay">
+								<h3>Facebook Clone</h3>
+								<span class="fa fa-expand fa-lg"></span>
+							</div>
+						</a>
+					</div>
+					<div class="modal fade" id="modal2">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+									<h3>Odin Facebook Clone</h3>
+								</div>
+								<div class="modal-body">
+									<h4>A clone of the ubiquitous social network as part of <a href="http://theodinproject.com">The Odin Project</a></h4>
+									<p>The final project for the Ruby on Rails course from <a href="http://www.theodinproject.com/ruby-on-rails/final-project">The Odin Project</a>. It is written to interface with Facebook's API so users can login using their Facebook information, or create a new account. Users can send friend requests, view profiles, make comments, and like other users' posts.</p>
+									<h5>Technologies used:</h5>
+									<p>Ruby on Rails, PostgreSQL, <a href="https://github.com/plataformatec/devise">Devise</a>, <a href="https://github.com/intridea/omniauth">OmniAuth</a>, Facebook API, Heroku Deployment</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
