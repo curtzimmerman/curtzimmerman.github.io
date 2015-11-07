@@ -100,16 +100,43 @@ div.projects-listing {
 	padding-top: 20px;
 }
 
-div.project {
-	text-align: center;
-}
-
 div.project img {
 	height: 250px;
 	width: 375px;
 	-webkit-box-shadow: 2px 2px 1px 0px rgba(50, 50, 50, 0.5);
 	-moz-box-shadow:    2px 2px 1px 0px rgba(50, 50, 50, 0.5);
 	box-shadow:         2px 2px 1px 0px rgba(50, 50, 50, 0.5);
+}
+
+div.img-wrapper {
+	position: relative;
+	max-width: 375px;
+	margin: 10px auto;
+}
+
+div.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 375px;
+	height: 250px;
+	background-color: rgb(50, 50, 50);
+
+	-webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+div.overlay:hover {
+	-webkit-opacity: 0.8;
+	-moz-opacity: 0.8;
+	opacity: 0.8;
 }
 
 
